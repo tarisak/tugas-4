@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $(".sembunyi").click(function() {$("#nanon").hide("slow")});    
+            $(".tampil").click(function() {$("#nanon").show("slow")});    
+            });
+            $(document).ready(function(){
+            $(".sembunyi3").click(function() {$("#nanon3").hide("slow")});    
+            $(".tampil3").click(function() {$("#nanon3").show("slow")});   
+            });
+            $(document).ready(function(){
+            $(".sembunyi2").click(function() {$("#nanon2").hide("slow")});    
+            $(".tampil2").click(function() {$("#nanon2").show("slow")});   
+            });
+        </script>
+        <style>
+            body {
+                padding-left: 5.5cm;
+                padding-top: 1.5cm;
+                background-color: grey;
+            }
+            img {
+                width: 300px;;
+            }
+            .button {
+                float:left;
+            }
+            .b1 {
+                padding-left:1.5cm;
+            }
+            .b2 {
+                padding-left:10cm;
+            }
+            .b3 {
+                padding-left:18cm;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+                <p>
+                    <img id="nanon" src="gambar/nanon.jpg">
+                    <img id="nanon2" src="gambar/nanon2.jpg">
+                    <img id="nanon3" src="gambar/nanon3.jpg">      
+                           
+                    <div class="button">
+                        <div class="b1">
+                            <input type=button class="sembunyi" value="sembunyikan">
+                            <input type=button class="tampil" value="tampilkan">
+                        </div>
+                        <div class="b2">
+                            <input type=button class="sembunyi2" value="sembunyikan">
+                            <input type=button class="tampil2" value="tampilkan">
+                        </div>
+                        <div class="b3">
+                            <input type=button class="sembunyi3" value="sembunyikan">
+                            <input type=button class="tampil3" value="tampilkan">
+                        </div>
+                    </div>
+                </p>
+        </div>
+    </body>
+</html>

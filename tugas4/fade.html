@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $(".out").click(function() {    
+            $("#kotak").fadeOut("slow");    
+            });
+            $(".in").click(function() {    
+            $("#kotak").fadeIn("slow");    
+            });
+            $(".to").click(function() {    
+            $("#kotak").fadeTo("slow",0.3);    
+            });
+            });
+        </script>
+        </script>
+        <style type="text/css">
+            #kotak {
+                width: 200px;
+                height: 200px;
+                background: rgb(243, 172, 214);
+                margin:10px;
+                border : 1px solid black;
+            }
+            body {
+                padding-left:15cm;
+                background-color: rgb(247, 220, 186);
+            }
+            h3 {
+                font-size:35px;
+                padding-left:0.5cm;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3> Fungsi Fade </h3>
+            <div id="kotak"></div>
+            <br>
+            <input type=button class="out" value="Fade Out">
+            <input type=button class="in" value="Fade In">
+            <input type=button class="to" value="Fade To 0.3">
+        </div>
+    </body>
+</html>
